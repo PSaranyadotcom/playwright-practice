@@ -28,6 +28,7 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test
+        working-directory: tests
 
       - name: Upload Playwright report (if failed)
         if: failure()
